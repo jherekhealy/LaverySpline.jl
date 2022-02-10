@@ -1,0 +1,17 @@
+name = "LaverySpline"
+uuid = "0bf8acf5-7f56-4370-abee-dfc0c3b7d49f"
+authors = ["Jherek Healy <jherekhealy@protonmail.com>"]
+version = "0.1.0"
+
+[deps]
+Cbc = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+PPInterpolation = "0bf8acf5-7f56-4370-abee-dfc0c3b7d49e"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+Cbc = "0.9"
+JuMP = "0.22"
+julia = "1"
+PPInterpolation = "0"
