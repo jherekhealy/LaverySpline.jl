@@ -59,8 +59,8 @@ function computeLaverySpline(pp::PP{3,T,TX}, x::AbstractArray{TX}, z::AbstractAr
 
     c = pp.c
     for i = 1:n-1
-        c[1, i] = (3 * dz[i] - b[i+1] - 2 * b[i]) / h[i]
-        c[2, i] = (b[i+1] + b[i] - 2 * dz[i]) / (h[i]^2)
+        c[i,1] = (3 * dz[i] - b[i+1] - 2 * b[i]) / h[i]
+        c[i,2] = (b[i+1] + b[i] - 2 * dz[i]) / (h[i]^2)
     end
     pp.a[1:end] = z
     pp.b[1:end] = b
